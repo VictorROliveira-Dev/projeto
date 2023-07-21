@@ -37,55 +37,7 @@ strong {
     width: 100%;
 }
 
-.btn-nav {
-    font-size: 16px;
-    font-weight: 300px;
+.btn:hover {
+    background-color: orange;
+    border: 1px solid orange;
 }
-
-.btn-nav {
-    --color: red;
-    font-family: inherit;
-    display: inline-block;
-    width: 8em;
-    height: 2.6em;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid red;
-    transition: color .5s;
-    z-index: 1;
-    font-size: 17px;
-    border-radius: 6px;
-    color: var(--color);
-}
-
-.btn-nav:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-}
-
-.btn-nav:hover {
-    color: #fff;
-    border: 2px solid red;
-}
-
-.btn-nav:before {
-    top: 100%;
-    left: 100%;
-    transition: all .9s;
-}
-
-.btn-nav:hover:before {
-    top: -30px;
-    left: -30px;
-}
-
-.btn-nav:active:before {
-    background: orange;
-    transition: background 0s;
-}
-
