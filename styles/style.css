@@ -3,7 +3,7 @@ body {
 }
 
 .title-nav {
-    color: rgb(195, 195, 6);
+    color: rgb(233, 233, 27);
     font-weight: bold;
     font-size: 26px;
 }
@@ -19,14 +19,14 @@ strong {
 
 .nav-link:hover {
     border-bottom: 2px;
-    color: gray;
+    color: red;
 }
 
 .nav-link::after {
     content: "";
     width: 0%;
     height: 3px;
-    background-color: gray;
+    background-color: red;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -43,14 +43,14 @@ strong {
 }
 
 .btn-nav {
-    --color: #27374D;
+    --color: red;
     font-family: inherit;
     display: inline-block;
     width: 8em;
     height: 2.6em;
     position: relative;
     overflow: hidden;
-    border: 2px solid var(--color);
+    border: 2px solid red;
     transition: color .5s;
     z-index: 1;
     font-size: 17px;
@@ -70,6 +70,7 @@ strong {
 
 .btn-nav:hover {
     color: #fff;
+    border: 2px solid red;
 }
 
 .btn-nav:before {
@@ -84,7 +85,7 @@ strong {
 }
 
 .btn-nav:active:before {
-    background: #2C3333;
+    background: orange;
     transition: background 0s;
 }
 
