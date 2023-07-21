@@ -1,0 +1,90 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.title-nav {
+    color: rgb(195, 195, 6);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+strong {
+    color: red;
+}
+
+.nav-link {
+    color: black;
+    position: relative;
+}
+
+.nav-link:hover {
+    border-bottom: 2px;
+    color: gray;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-nav {
+    font-size: 16px;
+    font-weight: 300px;
+}
+
+.btn-nav {
+    --color: #27374D;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    color: var(--color);
+}
+
+.btn-nav:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.btn-nav:hover {
+    color: #fff;
+}
+
+.btn-nav:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.btn-nav:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.btn-nav:active:before {
+    background: #2C3333;
+    transition: background 0s;
+}
+
